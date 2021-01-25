@@ -5,7 +5,7 @@
   max-width: 960px;
   padding: 1.5em;
   margin: 0 auto;
-  background-color: #ffffff75;
+  background-color: #808080;
 
   @media (--media-min-small) {
     padding: 2em;
