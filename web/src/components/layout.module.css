@@ -3,6 +3,7 @@
 
 .content {
   background: var(--color-white);
+  background-image: url(../images/grass_darker.jpg);
   min-height: calc(100% - 73px - 120px);
 
   @media (--media-min-small) {
