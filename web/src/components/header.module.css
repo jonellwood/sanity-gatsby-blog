@@ -4,9 +4,11 @@
 .root {
   position: relative;
   z-index: 100;
+  /* background-image: url("../images/waterPark.jpg"); */
 }
 
 .wrapper {
+  /* background-color: #0000ff30; */
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 960px;
@@ -23,8 +25,9 @@
   font-size: var(--font-title2-size);
   font-weight: 600;
   flex: 1;
-  color: var(--color-black);
-  text-shadow: 3px 3px 7px lightblue;
+  /* color: var(--color-black); */
+  color: white;
+  text-shadow: 3px 3px 7px black;
 
   @nest & a {
     display: inline-block;
@@ -62,8 +65,8 @@
 
 .nav {
   display: none;
-  color: blue;
-  text-shadow: 2px 2px 1px lightblue;
+  color: white;
+  text-shadow: 2px 2px 1px black;
   font-size: var(--font-title2-size);
 
   @nest & ul {

@@ -5,7 +5,8 @@
   max-width: 960px;
   padding: 1.5em;
   margin: 0 auto;
-  background-color: #808080;
+  background-color: #A52A2A;
+  background-blend-mode: color-burn;
 
   @media (--media-min-small) {
     padding: 2em;
