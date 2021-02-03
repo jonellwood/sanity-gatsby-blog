@@ -4,8 +4,12 @@
 .root {
   position: relative;
   z-index: 100;
-  /* background-image: url("../images/waterPark.jpg"); */
+  background-image: url("../images//parksSign404.jpg");
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
 }
+header .root img{width:200px;transition:width 0.3s ease-in-out 0s;}
 
 .wrapper {
   /* background-color: #0000ff30; */
@@ -26,8 +30,8 @@
   font-weight: 600;
   flex: 1;
   /* color: var(--color-black); */
-  color: white;
-  text-shadow: 3px 3px 7px black;
+  color: black;
+  text-shadow: 3px 3px 9px darkorange;
 
   @nest & a {
     display: inline-block;
@@ -65,8 +69,8 @@
 
 .nav {
   display: none;
-  color: white;
-  text-shadow: 2px 2px 1px black;
+  color: black;
+  text-shadow: 2px 2px 1px darkorange;
   font-size: var(--font-title2-size);
 
   @nest & ul {
