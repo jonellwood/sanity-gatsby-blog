@@ -10,7 +10,7 @@
   min-height: calc(100% - 73px - 120px);
 
   @media (--media-min-small) {
-    min-height: calc(100% - 91px - 155px);
+    min-height: calc(99.9% - 91px - 155px);
   }
 }
 
