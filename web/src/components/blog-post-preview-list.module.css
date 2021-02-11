@@ -3,6 +3,7 @@
 
 .root {
   margin: 2em 0 4em;
+
 }
 
 .headline {
@@ -19,9 +20,12 @@
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 2em;
   grid-row-gap: 2em;
+  @media (max-width: 950px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .browseMoreNav {

@@ -19,6 +19,6 @@ body > div,
 body > div > div {
   height: 100%;
   /* background-color: var(--color-light-gray); */
-  background-image: url(../images/grass_baw.jpg);
+  /* background-image: url(../images/grass_baw.jpg); */
 }
 

@@ -2,12 +2,16 @@
 @import '../styles/custom-properties.css';
 
 .root {
-  position: relative;
-  z-index: 100;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-image: url(../images/grass_darker.jpg);
+  z-index: 99;
+  /* z-index: 100;
   background-image: url("../images//parksSign404.jpg");
   background-size: cover;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 100%; */
 }
 header .root img{width:200px;transition:width 0.3s ease-in-out 0s;}
 
@@ -30,7 +34,7 @@ header .root img{width:200px;transition:width 0.3s ease-in-out 0s;}
   font-weight: 600;
   flex: 1;
   /* color: var(--color-black); */
-  color: black;
+  color: white;
   text-shadow: 3px 3px 9px darkorange;
 
   @nest & a {
@@ -69,7 +73,7 @@ header .root img{width:200px;transition:width 0.3s ease-in-out 0s;}
 
 .nav {
   display: none;
-  color: black;
+  color: white;
   text-shadow: 2px 2px 1px darkorange;
   font-size: var(--font-title2-size);
 
