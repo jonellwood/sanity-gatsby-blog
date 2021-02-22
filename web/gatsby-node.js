@@ -30,16 +30,6 @@ async function createBlogPostPages (graphql, actions) {
           }
         }
       }
-      allSanityPark {
-        edges {
-          node {
-            name
-            slug {
-              current
-            }
-          }
-        }
-      }
     }
   `)
 
@@ -61,52 +51,6 @@ async function createBlogPostPages (graphql, actions) {
       })
     })
 
-  const parkEdges = (result.data.allSanityPark || {}).edges || []
-
-  parkEdges
-    .forEach((edge, index) => {
-      const {id, slug = {}} = edge.node
-      const path = `/park/${slug.current}/`
-
-      createPage({
-        path,
-        component: require.resolve('./src/templates/Park.js'),
-        context: {id}
-      })
-    })
-}
-// create pages dynamicallys
-
-// exports.createPages = async ({graphql, actions}) => {
-//   const {createPage} = actions
-//   const parkPageTemplate = path.resolve(`src/templates/Park.js`)
-//   const result = await graphql(`
-//     query{
-//       park:allSanityPark{
-//         edges {
-//           node {
-//             name
-//             slug {
-//               current
-//             }
-//           }
-//         }
-//       }
-//   `)
-//   console.log('result of query is', {result})
-//   result.data.park.edges.node.forEach(node => {
-//     createPage({
-//       path: `${node.slug.current}`,
-//       component: parkPageTemplate,
-//       context: {
-//         name: node.name,
-//         slug: node.slug.current
-
-//       }
-//     })
-//   }
-//   )
-// }
 exports.createPages = async ({graphql, actions}) => {
   await createBlogPostPages(graphql, actions)
 }
